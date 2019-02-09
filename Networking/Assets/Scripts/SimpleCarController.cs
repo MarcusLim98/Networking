@@ -20,16 +20,16 @@ public class SimpleCarController : MonoBehaviour
 
     public void GetInput()
     {
-        //horizontalInput = Input.GetAxis("Horizontal");
-        //verticalInput = Input.GetAxis("Vertical");  
-        if (Input.GetKeyDown(KeyCode.W))
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");  
+        /*if (Input.GetKeyDown(KeyCode.W))
         {
             motorForce = 200;
         }
         else if (Input.GetKeyDown(KeyCode.S))
         {
             motorForce = -200;
-        }
+        }*/
     }
 
     public void Steer()

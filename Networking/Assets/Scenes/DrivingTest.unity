@@ -1989,7 +1989,7 @@ PrefabInstance:
     - target: {fileID: 114485273770408838, guid: 41c0760bd81dd084283814f0c432b466,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41c0760bd81dd084283814f0c432b466, type: 3}
@@ -2763,8 +2763,8 @@ MonoBehaviour:
   frontPassengerT: {fileID: 1816228108}
   rearDriverT: {fileID: 1816222234}
   rearPassengerT: {fileID: 1816137228}
-  maxSteerAngle: 90
-  motorForce: 200
+  maxSteerAngle: 30
+  motorForce: 400
 --- !u!1 &1752465634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2834,7 +2834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752465634}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d0fcdda09568cf49a392e287127be98, type: 3}
   m_Name: 
