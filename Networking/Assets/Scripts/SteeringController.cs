@@ -6,7 +6,7 @@ using VRTK;
 public class SteeringController : MonoBehaviour
 {
     public SimpleCarController simpleCarController;
-    bool accelerate, reverse;
+    public bool accelerate, reverse;
     public void Update()
     {
         transform.localRotation = Quaternion.Euler(0, 0, 0);
@@ -40,6 +40,16 @@ public class SteeringController : MonoBehaviour
             simpleCarController.motorForce = 0;
             reverse = true;
         }
+    }
+
+    public void StartEngines()
+    {
+        simpleCarController.verticalInput = 1;
+    }
+
+    public void StopEngines()
+    {
+        simpleCarController.verticalInput = 0;
     }
 
     private void OnTriggerStay(Collider other)
