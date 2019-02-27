@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerLogic : MonoBehaviour
 {
     public float runSpeed, jumpSpeed;
     protected Joystick js, js2;
-    float xzAxis, yAxis;
+    float xzAxis, yAxis, hp, maxHp = 100f; 
     bool jump, canJump = true, canMove = false, attack;
+    Image healthBar;    
     Rigidbody rb;
     Animator anim;
     float oldPosX;
@@ -16,8 +18,10 @@ public class PlayerLogic : MonoBehaviour
     {
         js = GameObject.Find("Fixed Joystick").GetComponent<Joystick>();
         js2 = GameObject.Find("Fixed Joystick 2").GetComponent<Joystick>();
+        healthBar = GameObject.Find("HealthBar").GetComponent<Image>();
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
+        hp = maxHp;
     }
 
     // Update is called once per frame
@@ -73,6 +77,13 @@ public class PlayerLogic : MonoBehaviour
         else if (rb.velocity.magnitude > 0 && !attack)
         {
             anim.SetInteger("State", 2);
+        }
+
+        healthBar.fillAmount = hp / maxHp;
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            hp -= 10;
         }
     }
 
