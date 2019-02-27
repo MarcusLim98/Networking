@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Networking;
+using UnityEngine.SceneManagement;
 
 public class MenuNetworking : NetworkManager
 {
@@ -37,7 +38,12 @@ public class MenuNetworking : NetworkManager
 
     void OnLevelWasLoaded(int level)
     {
-        if (level == 0)
+        CheckScene();
+    }
+
+    void CheckScene()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
         {
             SetUpMenuButtons();
         }
