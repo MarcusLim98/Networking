@@ -37,6 +37,7 @@ Transform:
   m_Children:
   - {fileID: 2833254006616335532}
   - {fileID: 8030475185812308758}
+  - {fileID: 3431149808141799251}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -168,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: -1768714887, guid: dc443db3e92b4983b9738c1131f555cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TransformSyncMode: 0
+  m_TransformSyncMode: 3
   m_SendInterval: 0.1
   m_SyncRotationAxis: 7
   m_RotationSyncCompression: 0
@@ -190,6 +191,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abf35fda3c0e38043bf7bd9b1e860244, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  namePrefab: {fileID: 5660967807378827817, guid: 4d527564b527e7d40b2dcf2ace1f08ce,
+    type: 3}
+  nameLabel: {fileID: 0}
+  namePos: {fileID: 3431149808141799251}
+  pName: player
 --- !u!1 &156678235547779478
 GameObject:
   m_ObjectHideFlags: 0
@@ -1597,6 +1603,45 @@ Transform:
   m_Father: {fileID: 1749360024907894340}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7431882734460222510
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3431149808141799251}
+  - component: {fileID: 3485913228895261938}
+  m_Layer: 8
+  m_Name: NamePos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3431149808141799251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431882734460222510}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1396368249}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3485913228895261938
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7431882734460222510}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7599822363187356181
 GameObject:
   m_ObjectHideFlags: 0
