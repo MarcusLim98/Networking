@@ -6,7 +6,12 @@ using UnityEngine.Networking;
 
 public class MenuNetworking : NetworkManager
 {
-   public void StartUpHost()
+    private void Start()
+    {
+        SetUpMenuButtons();
+    }
+
+    public void StartUpHost()
     {
         SetPort();
         NetworkManager.singleton.StartHost();
