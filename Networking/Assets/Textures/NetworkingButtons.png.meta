@@ -1,17 +1,20 @@
 fileFormatVersion: 2
-guid: 520a0dc87588c6a4c9788aada04df19e
+guid: 83a04b89f9423e04fbd27daafb6f581e
 TextureImporter:
   fileIDToRecycleName:
-    21300000: NetworkingButtons_0
-    21300002: NetworkingButtons_1
-    21300004: NetworkingButtons_2
-    21300006: NetworkingButtons_3
-    21300008: NetworkingButtons_4
-    21300010: NetworkingButtons_5
-    21300012: NetworkingButtons_6
-    21300014: NetworkingButtons_7
-    21300016: NetworkingButtons_8
-    21300018: NetworkingButtons_9
+    21300000: Host1
+    21300002: Host2
+    21300004: Host3
+    21300006: Join1
+    21300008: Join2
+    21300010: Join3
+    21300012: Credits1
+    21300014: Credits2
+    21300016: Credits3
+    21300018: Quit1
+    21300020: Quit2
+    21300022: Quit3
+    21300024: Blank
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -105,10 +108,10 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NetworkingButtons_0
+      name: Host1
       rect:
         serializedVersion: 2
-        x: 1
+        x: 40
         y: 1275
         width: 619
         height: 219
@@ -119,56 +122,76 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01ec5e2c9513d2444a07e97e238bf8f5
+      spriteID: 74af6c33e476ed542a6ce3398e4396d6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NetworkingButtons_1
+      name: Host2
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 1275
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa0d203be233604b99fe4fb00e52a47
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Host3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1275
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e476e96a24838634482543b0e5be1a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Join1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 961
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cdfb2547e0b68469aaaf86910cb2d5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Join2
       rect:
         serializedVersion: 2
         x: 740
-        y: 1275
-        width: 619
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71f07466cd3bc31459d3f4163c3bd80f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NetworkingButtons_2
-      rect:
-        serializedVersion: 2
-        x: 1480
-        y: 1275
-        width: 619
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19ee8462830bda24b9a9ecd07f02ba8e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NetworkingButtons_3
-      rect:
-        serializedVersion: 2
-        x: 2
         y: 961
         width: 619
         height: 219
@@ -179,19 +202,119 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4968885c01f92714a8805bd29df4b046
+      spriteID: 630f9246240ce854c813d73c2690a286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NetworkingButtons_4
+      name: Join3
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 961
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e1d882235e7774fa6f7a2993668527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 641
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11fabeda7deae5c4aac26e7a48266b4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits2
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 641
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca37cab49cf5eb41b2f171556f04b4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Credits3
+      rect:
+        serializedVersion: 2
+        x: 1441
+        y: 641
+        width: 619
+        height: 219
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106f1834e70a2c9458db5aff30704ea4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quit1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 328
+        width: 619
+        height: 218
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57969533521007c40a18412c13eaf367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Quit2
       rect:
         serializedVersion: 2
         x: 741
-        y: 961
+        y: 328
         width: 619
-        height: 219
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,19 +322,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650c4dd5b84ee3545a86efba52905d30
+      spriteID: 7dd63d595cf1df843948aaecb2ef8535
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NetworkingButtons_5
+      name: Quit3
       rect:
         serializedVersion: 2
-        x: 1481
-        y: 961
+        x: 1442
+        y: 328
         width: 619
-        height: 219
+        height: 218
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -219,77 +342,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e1c5a4b1f9fa15468b171bf3177dea9
+      spriteID: d2a0f1666b52c45418e0d8784ba6384c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NetworkingButtons_6
+      name: Blank
       rect:
         serializedVersion: 2
-        x: 2
-        y: 641
-        width: 619
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2eb7a94fc7fadc648a2aa99f77ea3e15
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NetworkingButtons_7
-      rect:
-        serializedVersion: 2
-        x: 741
-        y: 641
-        width: 619
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af17d1015c8c6b1448b7578ae764bfd5
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NetworkingButtons_8
-      rect:
-        serializedVersion: 2
-        x: 1481
-        y: 641
-        width: 619
-        height: 219
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0ef7f1211699a6d43ac37933125671f6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: NetworkingButtons_9
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 280
+        x: 94
+        y: 66
         width: 250
         height: 250
       alignment: 0
@@ -299,7 +362,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5989485dae8e1eb49b930d88ac9a531c
+      spriteID: df35ec30f8b040144acf0e7e4e6eb03b
       vertices: []
       indices: 
       edges: []
@@ -307,7 +370,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 40b9a2b9ad591834a91704a788e7016a
+    spriteID: 4b1d5281c5b721c4a8df74e77140e2ec
     vertices: []
     indices: 
     edges: []
