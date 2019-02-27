@@ -115,6 +115,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f8ae01cae5c48940b2e099a91e1c439, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  downAttack: {fileID: 340243227160099698, guid: 0fd393ada5595514c8a0a3c30dc60ed3,
+    type: 3}
+  rightAttack: {fileID: 2875565372142458075, guid: 818b9203ceea6cf4caa39473dcd981ae,
+    type: 3}
+  leftAttack: {fileID: 340243227160099698, guid: d49a177d6ae264a4aadebabc82d7d213,
+    type: 3}
   runSpeed: 3
   jumpSpeed: 7
 --- !u!114 &6078331429853635243

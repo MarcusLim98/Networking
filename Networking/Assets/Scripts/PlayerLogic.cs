@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Networking;
 
 public class PlayerLogic : MonoBehaviour
 {
+    public GameObject downAttack, rightAttack, leftAttack;
     public float runSpeed, jumpSpeed;
     protected Joystick js, js2;
     float xzAxis, yAxis, hp, maxHp = 100f; 
@@ -50,19 +52,19 @@ public class PlayerLogic : MonoBehaviour
                 }
             }
         }
-        else if (js2.Vertical <= -0.5f && canJump)
+        else if (js2.Vertical <= -0.5f && canJump && !attack)
         {
             //print("down");
             attack = true;
             anim.SetInteger("State", 3);
         }
-        else if (js2.Horizontal >= 0.5f && canJump)
+        else if (js2.Horizontal >= 0.5f && canJump && !attack)
         {
             //print("right");
             attack = true;
             anim.SetInteger("State", 4);
         }
-        else if (js2.Horizontal <= -0.5f && canJump)
+        else if (js2.Horizontal <= -0.5f && canJump && !attack)
         {
             //print("left");
             attack = true;
@@ -80,6 +82,10 @@ public class PlayerLogic : MonoBehaviour
         }
 
         healthBar.fillAmount = hp / maxHp;
+        if(healthBar.fillAmount <= 0)
+        {
+            NetworkManager.singleton.StopHost();
+        }
 
         if (Input.GetKeyDown(KeyCode.P))
         {
@@ -106,6 +112,21 @@ public class PlayerLogic : MonoBehaviour
         xzAxis = runSpeed;
         yAxis = jumpSpeed;
         anim.SetInteger("State", 1);
+    }
+
+    public void ShootBall()
+    {
+        Instantiate(downAttack, transform.position, Quaternion.identity);
+    }
+
+    public void Thunder()
+    {
+        Instantiate(rightAttack, new Vector3(0, 9, transform.position.z + 10), Quaternion.Euler(90, 0, 0));
+    }
+
+    public void Spam()
+    {
+        Instantiate(leftAttack, transform.position, Quaternion.identity);
     }
 
     private void OnCollisionEnter(Collision collision)
