@@ -7,7 +7,7 @@ public class PlayerLogic : MonoBehaviour
     public float runSpeed, jumpSpeed;
     protected Joystick js;
     protected JoyButton jb;
-    bool jump;
+    bool jump, canJump = true;
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -22,14 +22,36 @@ public class PlayerLogic : MonoBehaviour
     {
         rb.velocity = new Vector3(js.Horizontal * runSpeed, rb.velocity.y, js.Vertical * runSpeed);
 
-        if (!jump &&jb.pressed)
+        Vector3 lookDirection = new Vector3(js.Horizontal, 0, js.Vertical );
+        transform.rotation = Quaternion.LookRotation(lookDirection);
+
+        if (canJump)
         {
-            jump = true;
-            rb.velocity += Vector3.up * jumpSpeed;
+            if (!jump && jb.pressed)
+            {
+                jump = true;
+                rb.velocity += Vector3.up * jumpSpeed;
+            }
+            else if (jump && jb.pressed)
+            {
+                jump = false;
+            }
         }
-        else if (jump && jb.pressed)
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "Plane")
         {
-            jump = false;
+            canJump = true;
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.name == "Plane")
+        {
+            canJump = false;
         }
     }
 }
