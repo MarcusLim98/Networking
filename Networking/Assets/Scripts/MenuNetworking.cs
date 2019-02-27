@@ -21,7 +21,7 @@ public class MenuNetworking : NetworkManager
 
     void SetIPAddress()
     {
-        string ipAddress = GameObject.Find("InputFieldIPAddress").transform.GetChild(1).GetComponent<Text>().text;
+        string ipAddress = GameObject.Find("InputFieldIPAddress").transform.GetChild(2).GetComponent<Text>().text;
         NetworkManager.singleton.networkAddress = ipAddress;
     }
 
