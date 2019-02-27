@@ -18,13 +18,9 @@ public class Bullet : MonoBehaviour
     }
     IEnumerator Destroy()
     {
+        yield return new WaitForSeconds(0.25f);
+        gameObject.tag = "Damage";
         yield return new WaitForSeconds(time);
         Destroy(gameObject);
-
-
-
-
-
-
     }
 }
