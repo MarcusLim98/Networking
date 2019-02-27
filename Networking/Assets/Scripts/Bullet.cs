@@ -20,5 +20,11 @@ public class Bullet : MonoBehaviour
     {
         yield return new WaitForSeconds(time);
         Destroy(gameObject);
+
+
+
+
+
+
     }
 }

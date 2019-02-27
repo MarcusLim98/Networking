@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 3982638477949224617}
   - component: {fileID: 4987081156287590827}
   - component: {fileID: 9200613600328587221}
+  - component: {fileID: 7749712719043262230}
   m_Layer: 0
   m_Name: DownAttack
-  m_TagString: Untagged
+  m_TagString: Damage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4776,3 +4777,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 8
   time: 4
+--- !u!135 &7749712719043262230
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 340243227160099698}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5579433
+  m_Center: {x: -0.05941069, y: 0.13017178, z: 0.045274973}

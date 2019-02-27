@@ -1,5 +1,31 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &8277435495799848112
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876896082523047566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4111195, y: 1.9267521, z: 9.732196}
+  m_Center: {x: -0.12054062, y: -0.01594827, z: 5.1398106}
+--- !u!65 &1826249854568846341
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876896082152857637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4993069, y: 3.458381, z: 9.926691}
+  m_Center: {x: -0.05957511, y: 0.2047777, z: 5.097056}
 --- !u!1 &2875565372142458075
 GameObject:
   m_ObjectHideFlags: 0
@@ -48,6 +74,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   time: 2
+--- !u!65 &1193403566536406340
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2876896082713809563}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.8349254, y: 1.8558954, z: 8.648719}
+  m_Center: {x: -0.09370199, y: -0.007242026, z: 4.5190597}
 --- !u!1001 &2875565371449813268
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58,6 +97,10 @@ PrefabInstance:
     - target: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_Name
       value: Electricity (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
+      propertyPath: m_TagString
+      value: Damage
       objectReference: {fileID: 0}
     - target: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_LocalPosition.x
@@ -105,6 +148,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
+--- !u!1 &2876896082523047566 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232,
+    type: 3}
+  m_PrefabInstance: {fileID: 2875565371449813268}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2880344336676654890 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232,
@@ -121,6 +170,10 @@ PrefabInstance:
     - target: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_Name
       value: Electricity (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
+      propertyPath: m_TagString
+      value: Damage
       objectReference: {fileID: 0}
     - target: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_LocalPosition.x
@@ -168,6 +221,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
+--- !u!1 &2876896082152857637 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232,
+    type: 3}
+  m_PrefabInstance: {fileID: 2875565371685785535}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2880344336442812801 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232,
@@ -184,6 +243,10 @@ PrefabInstance:
     - target: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_Name
       value: Electricity
+      objectReference: {fileID: 0}
+    - target: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
+      propertyPath: m_TagString
+      value: Damage
       objectReference: {fileID: 0}
     - target: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
       propertyPath: m_LocalPosition.x
@@ -231,6 +294,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0310b8628b5599c4295215fedba1a232, type: 3}
+--- !u!1 &2876896082713809563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1344457166417818, guid: 0310b8628b5599c4295215fedba1a232,
+    type: 3}
+  m_PrefabInstance: {fileID: 2875565372194389249}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2880344337001667391 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4792296990418494, guid: 0310b8628b5599c4295215fedba1a232,

@@ -86,11 +86,6 @@ public class PlayerLogic : MonoBehaviour
         {
             NetworkManager.singleton.StopHost();
         }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            hp -= 10;
-        }
     }
 
     public void StopMove()
@@ -142,6 +137,14 @@ public class PlayerLogic : MonoBehaviour
         if (collision.gameObject.name == "Plane")
         {
             canJump = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Damage")
+        {
+            hp -= 10;
         }
     }
 }

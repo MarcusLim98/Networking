@@ -189,7 +189,7 @@ ModelImporter:
         intParameter: 0
         messageOptions: 0
       - time: 1
-        functionName: Spam
+        functionName: AttackOver
         data: 
         objectReferenceParameter: {fileID: 11500000, guid: 8f8ae01cae5c48940b2e099a91e1c439,
           type: 3}
